@@ -14,21 +14,33 @@ import { invite } from "@/config/invite";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 
-const title = `${invite.groom} & ${invite.bride} — ${invite.dayLine.split(",")[1]?.trim() ?? invite.dateLabel}`;
-const description = `${invite.groom} & ${invite.bride} invite you to their wedding reception on ${invite.dayLine} at ${invite.venue.name}, ${invite.venue.city}.`;
+const title = `${invite.groom} & ${invite.bride} — Wedding Reception Invitation`;
+const description = `Together with their families, ${invite.groom} & ${invite.bride} invite you to celebrate their wedding reception on ${invite.dayLine} at ${invite.venue.name}, ${invite.venue.city}.`;
+const canonicalUrl = `${invite.productionUrl}/`;
+const ogImageUrl = invite.ogImage;
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: `${title} · Save the Date` },
       { name: "description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: canonicalUrl },
       { property: "og:title", content: `${title} · Save the Date` },
       { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:image", content: ogImageUrl },
+      { property: "og:image:secure_url", content: ogImageUrl },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: `Wedding Reception Invitation of ${invite.groom} & ${invite.bride}` },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:url", content: canonicalUrl },
+      { name: "twitter:title", content: `${title} · Save the Date` },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: ogImageUrl },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: canonicalUrl }],
   }),
   component: Invitation,
 });
