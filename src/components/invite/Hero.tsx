@@ -102,7 +102,19 @@ export function Hero({ ready = true }: { ready?: boolean }) {
         <span className="inline-block whitespace-nowrap">
           <ScriptNames text={invite.groom} delay={0.85} trigger={anim} />
         </span>
-        <span className="mx-2 text-gold sm:mx-5">&</span>
+        <motion.span
+          aria-hidden="true"
+          className="mx-2 sm:mx-5 inline-block text-gold"
+          initial={{ opacity: 0, y: 16, scale: 0.85, rotate: -6 }}
+          animate={
+            ready
+              ? { opacity: 1, y: 0, scale: 1, rotate: 0 }
+              : { opacity: 0, y: 16, scale: 0.85, rotate: -6 }
+          }
+          transition={{ duration: 0.7, delay: 1.05, ease }}
+        >
+          &
+        </motion.span>
         <span className="inline-block whitespace-nowrap">
           <ScriptNames text={invite.bride} delay={1.2} trigger={anim} />
         </span>

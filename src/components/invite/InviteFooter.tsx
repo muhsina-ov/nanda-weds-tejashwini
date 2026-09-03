@@ -42,11 +42,20 @@ export function InviteFooter() {
           {invite.closing}
         </motion.p>
 
-        <p className="script mt-4 sm:mt-5 text-4xl xs:text-5xl sm:text-6xl leading-[1.1] text-ink">
+        <p className="footer-names mt-4 sm:mt-5 text-3xl xs:text-4xl sm:text-5xl text-ink">
           <span className="inline-block whitespace-nowrap">
             <ScriptNames text={invite.groom} />
           </span>
-          <span className="mx-2 sm:mx-3 text-gold">&</span>
+          <motion.span
+            aria-hidden="true"
+            className="mx-2 sm:mx-3 inline-block font-serif text-gold italic font-normal"
+            initial={{ opacity: 0, y: 12, scale: 0.85 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-15% 0px" }}
+            transition={{ duration: 0.7, delay: 0.18, ease: [0.22, 0.61, 0.36, 1] }}
+          >
+            &amp;
+          </motion.span>
           <span className="inline-block whitespace-nowrap">
             <ScriptNames text={invite.bride} delay={0.3} />
           </span>
