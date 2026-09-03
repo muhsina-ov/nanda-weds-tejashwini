@@ -81,30 +81,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Together with their families, Nanda & Tejaswini invite you to celebrate their wedding reception on Saturday, 24th October 2026 at The Grand Krishna, Bengaluru.",
+          "Celebrate the wedding reception of Nanda & Tejaswini on 24th October 2026 at The Grand Krishna, Bengaluru.",
       },
       { name: "author", content: "InviteStory" },
+      { property: "og:site_name", content: "InviteStory" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://nanda-weds-tejashwini.pages.dev/" },
+      { property: "og:url", content: "https://nanda-weds-tejaswini.invitingyou.top/" },
       { property: "og:title", content: "Nanda & Tejaswini — Wedding Reception Invitation" },
       {
         property: "og:description",
         content:
-          "Together with their families, Nanda & Tejaswini invite you to celebrate their wedding reception on Saturday, 24th October 2026 at The Grand Krishna, Bengaluru.",
+          "Celebrate the wedding reception of Nanda & Tejaswini on 24th October 2026 at The Grand Krishna, Bengaluru.",
       },
-      { property: "og:image", content: "https://nanda-weds-tejashwini.pages.dev/og-image.jpg" },
+      { property: "og:image", content: "https://nanda-weds-tejaswini.invitingyou.top/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://nanda-weds-tejaswini.invitingyou.top/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Wedding Reception Invitation of Nanda & Tejaswini" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:url", content: "https://nanda-weds-tejashwini.pages.dev/" },
+      { name: "twitter:url", content: "https://nanda-weds-tejaswini.invitingyou.top/" },
       { name: "twitter:title", content: "Nanda & Tejaswini — Wedding Reception Invitation" },
       {
         name: "twitter:description",
         content:
-          "Together with their families, Nanda & Tejaswini invite you to celebrate their wedding reception on Saturday, 24th October 2026 at The Grand Krishna, Bengaluru.",
+          "Celebrate the wedding reception of Nanda & Tejaswini on 24th October 2026 at The Grand Krishna, Bengaluru.",
       },
-      { name: "twitter:image", content: "https://nanda-weds-tejashwini.pages.dev/og-image.jpg" },
+      { name: "twitter:image", content: "https://nanda-weds-tejaswini.invitingyou.top/og-image.jpg" },
       { name: "twitter:site", content: "@invitestory.in" },
     ],
     links: [

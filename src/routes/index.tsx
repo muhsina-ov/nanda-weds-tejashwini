@@ -15,7 +15,7 @@ import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 
 const title = `${invite.groom} & ${invite.bride} — Wedding Reception Invitation`;
-const description = `Together with their families, ${invite.groom} & ${invite.bride} invite you to celebrate their wedding reception on ${invite.dayLine} at ${invite.venue.name}, ${invite.venue.city}.`;
+const description = `Celebrate the wedding reception of ${invite.groom} & ${invite.bride} on 24th October 2026 at ${invite.venue.name}, ${invite.venue.city}.`;
 const canonicalUrl = `${invite.productionUrl}/`;
 const ogImageUrl = invite.ogImage;
 
@@ -24,6 +24,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: `${title} · Save the Date` },
       { name: "description", content: description },
+      { property: "og:site_name", content: "InviteStory" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: canonicalUrl },
       { property: "og:title", content: `${title} · Save the Date` },

@@ -27,8 +27,8 @@ export const invite = {
     lng: 77.6171,
   },
   closing: "See you there",
-  productionUrl: "https://nanda-weds-tejashwini.pages.dev",
-  ogImage: "https://nanda-weds-tejashwini.pages.dev/og-image.jpg",
+  productionUrl: "https://nanda-weds-tejaswini.invitingyou.top",
+  ogImage: "https://nanda-weds-tejaswini.invitingyou.top/og-image.jpg",
 } as const;
 
 export const mapsUrl = "https://maps.app.goo.gl/AYZqyDE4TpnvbKzCA";
