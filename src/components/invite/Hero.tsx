@@ -95,7 +95,7 @@ export function Hero({ ready = true }: { ready?: boolean }) {
       </motion.p>
 
       <motion.h1
-        className="script mt-2 sm:mt-3 text-[2.5rem] xs:text-[2.9rem] sm:text-7xl leading-[1.08] text-ink"
+        className="couple-names mt-2 sm:mt-3 text-[2.5rem] xs:text-[2.9rem] sm:text-7xl leading-[1.08] text-ink"
         initial="hidden"
         animate={anim}
       >
