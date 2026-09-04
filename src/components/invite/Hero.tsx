@@ -104,7 +104,7 @@ export function Hero({ ready = true }: { ready?: boolean }) {
         </span>
         <motion.span
           aria-hidden="true"
-          className="mx-2 sm:mx-5 inline-block text-gold"
+          className="mx-2 sm:mx-5 inline-block font-serif text-gold italic font-normal"
           initial={{ opacity: 0, y: 16, scale: 0.85, rotate: -6 }}
           animate={
             ready

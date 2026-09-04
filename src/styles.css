@@ -178,7 +178,7 @@
   --color-gold: var(--gold);
   --color-sepia: var(--sepia);
 
-  --font-script: "Parisienne", cursive;
+  --font-script: "Alex Brush", cursive;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-caps: "Josefin Sans", system-ui, sans-serif;
   --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
@@ -198,11 +198,10 @@
 }
 
 @utility footer-names {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
+  font-family: var(--font-script);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.15;
 }
 
 @utility grain {
